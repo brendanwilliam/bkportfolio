@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/Button";
+
 
 function Hero() {
   return (
@@ -69,12 +71,15 @@ function Resume() {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Hero />
+      <Button href="" style="primary">Primary</Button>
+      <Button href="" style="secondary">Secondary</Button>
+      <Button href="" style="tertiary" icon="bx-download">Tertiary</Button>
+      {/* <Hero />
       <Content>
         <Projects />
         <About />
         <Resume />
-      </Content>
+      </Content> */}
     </main>
   );
 }
