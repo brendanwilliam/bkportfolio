@@ -2,13 +2,15 @@ import Image from "next/image";
 import clsx from "clsx";
 import { Button } from "@/components/Button";
 import { SocialLink } from "@/components/SocialLink";
+import { Section } from "@/components/Section";
+import { SubSection } from "@/components/SubSection";
+import { Content } from "@/components/Content";
 
 // Hero global state
 
 interface SocialLink {
   href: string,
   icon: string
-
 }
 
 interface HeroProfile {
@@ -102,23 +104,6 @@ function Hero() {
   )
 }
 
-function Content({ children }: { children: React.ReactNode }) {
-  return (
-      <div className="w-full spacing-y-8">
-        {children}
-      </div>
-  )
-}
-
-function Section({ id, title, children }: { id: string, title: string, children: React.ReactNode }) {
-  return (
-    <div id={id} className="w-full pt-4 pb-8">
-      <h1 className="px-4 text-3xl text-neutral-800 font-bold pb-4">{title}</h1>
-      {children}
-    </div>
-  )
-}
-
 function Projects() {
   return (
     <>
@@ -126,8 +111,6 @@ function Projects() {
     </>
   )
 }
-
-
 
 function ProjectCard({
   title,
@@ -152,14 +135,6 @@ function ProjectCard({
   )
 }
 
-function SubSection({ title, children }: { title: string, children: React.ReactNode }) {
-  return (
-    <div className="w-full px-4 pb-4">
-      <h2 className="text-sm text-neutral-700 font-bold pb-2">{title}</h2>
-      {children}
-    </div>
-  )
-}
 
 function Biography() {
   return (
