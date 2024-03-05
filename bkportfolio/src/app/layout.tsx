@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Layout } from "@/components/Layout";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 
@@ -7,8 +6,8 @@ import "./globals.css";
 const interTight = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rough Draft Media",
-  description: "A Seattle-based digital media production house",
+  title: "Portfolio — Brendan Keane",
+  description: "Brendan Keane's front-end developer portfolio",
 };
 
 export default function RootLayout({
@@ -23,8 +22,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={interTight.className}>
-        <div className="flex w-full bg-black">
-          <Layout>{children}</Layout>
+        <div className="flex w-full bg-white">
+          {children}
         </div>
       </body>
     </html>

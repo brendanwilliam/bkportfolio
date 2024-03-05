@@ -17,13 +17,13 @@ export function Button({
 
   return (
     <Link href={href} className={
-        clsx("flex flex-row justify-center items-center gap-1",
-        (style === ("primary" || "secondary")) ? "px-9 py-3 rounded-lg" : "p-0",
+        clsx("flex flex-row justify-center items-center text-sm",
+        style === "primary" || style === "secondary" ? "px-9 py-3 rounded-lg font-medium" : "p-0 font-normal",
         style === "primary" && "text-sky-50 bg-sky-600 hover:bg-sky-400",
-        style === "secondary" && "text-sky-600 bg-transparent hover:bg-sky-100",
+        style === "secondary" && "text-sky-600 bg-transparent hover:bg-sky-100 border border-sky-600",
         style === "tertiary" && "text-sky-600 hover:text-sky-400")} >
       <span className={clsx()}>
-        <i className={clsx((icon === '') ? 'hidden' : 'inline', 'bx bx-xs', icon)}/>{children}
+        <i className={clsx((icon === '') ? 'hidden' : 'inline bx bx-xs translate-y-0.5 mr-1', icon)}/>{children}
       </span>
     </Link>
 

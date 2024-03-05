@@ -71,7 +71,7 @@ function Resume() {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button href="" style="primary">Primary</Button>
+      <Button href="" style="primary">Another</Button>
       <Button href="" style="secondary">Secondary</Button>
       <Button href="" style="tertiary" icon="bx-download">Tertiary</Button>
       {/* <Hero />
