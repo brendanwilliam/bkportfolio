@@ -17,8 +17,8 @@ export function Button({
 
   return (
     <Link href={href} className={
-        clsx("flex flex-row justify-center items-center text-sm w-full",
-        style === "primary" || style === "secondary" ? "px-9 py-3 rounded-lg font-medium" : "p-0 font-normal",
+        clsx("flex flex-row justify-center items-center text-sm",
+        style === "primary" || style === "secondary" ? "px-9 py-3 rounded-lg font-medium w-full" : "p-0 font-normal",
         style === "primary" && "text-sky-50 bg-sky-600 hover:bg-sky-400",
         style === "secondary" && "text-sky-600 bg-transparent hover:bg-sky-100 border border-sky-600",
         style === "tertiary" && "text-sky-600 hover:text-sky-400")} >

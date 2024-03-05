@@ -26,15 +26,25 @@ const heroProfile: HeroProfile = {
   title: "Frontend Developer & UX Designer",
   openToWork: true,
   socialLinks: [
-    { href: "", icon: "bxl-linkedin"},
-    { href: "", icon: "bxl-gmail"},
-    { href: "", icon: "bxl-figma"},
-    { href: "", icon: "bxl-github"},
+    { href: "https://www.linkedin.com/in/brendanwillkeane/", icon: "bxl-linkedin"},
+    { href: "mailto:brendanwillkeane@gmail.com", icon: "bxl-gmail"},
+    { href: "https://www.figma.com/@bkhci", icon: "bxl-figma"},
+    { href: "https://github.com/brendanwilliam", icon: "bxl-github"},
   ],
   resumeHref: ""
 }
 
+interface ContactLink {
+  title: string,
+  icon: string,
+  href: string
+}
 
+const contact: ContactLink[] = [
+  { title: "brendanwillkeane@gmail.com", icon: "bxl-gmail", href: "mailto:brendanwillkeane@gmail.com" },
+  { title: "in/brendanwillkeane", icon: "bxl-linkedin", href: "https://www.linkedin.com/in/brendanwillkeane/" },
+  { title: "Download resume", icon: "bx-download", href: "" }
+]
 
 function Profile() {
   return (
@@ -94,11 +104,19 @@ function Hero() {
 
 function Content({ children }: { children: React.ReactNode }) {
   return (
-      <div className="max-w-4xl w-full spacing-y-20 px-5 mb-0 py-10">
+      <div className="w-full spacing-y-8">
         {children}
       </div>
   )
+}
 
+function Section({ id, title, children }: { id: string, title: string, children: React.ReactNode }) {
+  return (
+    <div id={id} className="w-full pt-4 pb-8">
+      <h1 className="px-4 text-3xl text-neutral-800 font-bold pb-4">{title}</h1>
+      {children}
+    </div>
+  )
 }
 
 function Projects() {
@@ -134,31 +152,57 @@ function ProjectCard({
   )
 }
 
+function SubSection({ title, children }: { title: string, children: React.ReactNode }) {
+  return (
+    <div className="w-full px-4 pb-4">
+      <h2 className="text-sm text-neutral-700 font-bold pb-2">{title}</h2>
+      {children}
+    </div>
+  )
+}
+
+function Biography() {
+  return (
+    <SubSection title="Biography">
+      <div className="font-light text-neutral-600 text-sm space-y-1">
+        <p>Trained in both UI/UX design and software  engineering, Brendan’s technical edge lets him develop digital products  from idea to reality. At Rough Draft Media, his unique skills shine in  brand design, web development, video editing, and technical art.</p>
+        <p>Since  graduating the University of Washington with a B.S. in Human-Computer  Interaction, Brendan has produced custom websites for film &  television, professional portfolios, and online learning platforms.</p>
+      </div>
+    </SubSection>
+
+  )
+}
+
+function Contact() {
+  return (
+    <SubSection title="Contact">
+      <div className="flex flex-col justify-start items-start gap-1">
+        {contact.map((link, index) => (
+          <Button key={index} href={link.href} style="tertiary" icon={link.icon}>{link.title}</Button>
+        ))}
+      </div>
+    </SubSection>
+  )
+}
+
 function About() {
   return (
-    <>
-
-    </>
+    <Section id="about" title="About">
+      <Biography />
+      <Contact />
+    </Section>
   )
 }
 
-function Resume() {
-  return (
-    <>
-
-    </>
-  )
-}
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-screen">
       <Hero />
-      {/* <Content>
+      <Content>
         <Projects />
         <About />
-        <Resume />
-      </Content> */}
+      </Content>
     </main>
   );
 }
