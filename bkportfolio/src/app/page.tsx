@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
+import { SocialLink } from "@/components/SocialLink";
 
 
 function Hero() {
@@ -71,9 +72,7 @@ function Resume() {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button href="" style="primary">Another</Button>
-      <Button href="" style="secondary">Secondary</Button>
-      <Button href="" style="tertiary" icon="bx-download">Tertiary</Button>
+      <SocialLink href="" icon="bxl-github" />
       {/* <Hero />
       <Content>
         <Projects />
