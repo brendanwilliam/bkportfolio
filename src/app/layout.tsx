@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <head>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" sizes="any" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
-        <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={interTight.className}>
         <div className="flex w-full bg-white">
