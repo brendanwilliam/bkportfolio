@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <Content className="lg:flex md:top-0 block lg:flex-row-reverse justify-start items-start md:p-6">
         <div className="size-0 ml-auto"></div>
-        <About />
         <Projects />
+        <About />
       </Content>
     </main>
   );
