@@ -35,7 +35,7 @@ const projects: Project[] = [
   {
     date: new Date(2024, 2),
     title: "Reflections of the River — Documentary series",
-    description: "Reflections of the river is a documentary series investigating river health in the United States. This project. This project was build with React using JavaScript and TailwindCSS, and deployed with Next.js and Vercel.",
+    description: "Reflections of the River is a documentary series investigating river health in the United States. This project. This project was build with React using JavaScript and TailwindCSS, and deployed with Next.js and Vercel.",
     links: [
       { title: "reflectionsoftheriver.com", icon: "bx-link", href: "http://reflectionsoftheriver.com" },
       { title: "Project repository", icon: "bxl-github", href: "https://github.com/brendanwilliam/rotr-series" }
