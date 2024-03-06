@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/Footer";
 
 
 const interTight = Inter_Tight({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
         <div className="flex w-full bg-white">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );
