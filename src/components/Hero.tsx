@@ -35,7 +35,7 @@ function Profile() {
   return (
     <div className="flex flex-col justify-start items-center gap-0">
       <Image
-      src="/profile.png"
+      src="/profile.jpg"
       alt="Profile picture"
       width={160}
       height={160}
@@ -61,17 +61,19 @@ function SocialLinks() {
 
 function HeroProfile() {
   return (
-    <div className="flex flex-col justify-start items-center gap-8">
+    <div className="flex flex-col justify-start md:justify-between md:py-16 h-full items-center gap-8">
       <Profile />
-      <SocialLinks />
-      <Button href={heroProfile.resumeHref} style="tertiary" icon="bx-download">Download resume</Button>
+      <div className="flex flex-col gap-8">
+        <SocialLinks />
+        <Button href={heroProfile.resumeHref} style="tertiary" icon="bx-download">Download resume</Button>
+      </div>
     </div>
   )
 }
 
 function HeroMenu() {
   return (
-    <div className="w-full flex flex-col justify-end items-center gap-1">
+    <div className="md:hidden w-full flex flex-col justify-end items-center gap-1">
       <Button href="#projects" style="primary">Projects</Button>
       <Button href="#about" style="secondary">About</Button>
     </div>
@@ -80,7 +82,7 @@ function HeroMenu() {
 
 export function Hero() {
   return (
-    <div className="w-full md:max-w-sm h-screen flex flex-col justify-between items-stretch gap-8 px-4 pb-8 pt-32">
+    <div className="w-full md:max-w-80 md:max-h-screen h-screen md:sticky md:top-0 flex flex-col justify-between md:justify-center md:py-8 md:bg-neutral-50 items-stretch gap-8 px-4 pb-8 pt-32">
       <HeroProfile />
       <HeroMenu />
     </div>

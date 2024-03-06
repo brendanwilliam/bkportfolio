@@ -40,7 +40,7 @@ function Contact() {
 
 export function About() {
   return (
-    <Section id="about" title="About">
+    <Section id="about" title="About" className="md:max-w-sm">
       <Biography />
       <Contact />
     </Section>

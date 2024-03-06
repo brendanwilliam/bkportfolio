@@ -83,7 +83,7 @@ function ProjectCard({
 
 export function Projects() {
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" title="Projects" className="md:max-w-xl">
       <div className="flex flex-col gap-2 justify-center items-stretch px-4">
         {projects.map((project, index) => (
           <ProjectCard key={index} date={project.date} title={project.title} description={project.description} links={project.links} />
