@@ -28,7 +28,7 @@ const heroProfile: HeroProfile = {
     { href: "https://www.figma.com/@bkhci", icon: "bxl-figma"},
     { href: "https://github.com/brendanwilliam", icon: "bxl-github"},
   ],
-  resumeHref: ""
+  resumeHref: "/resume-brendankeane.pdf"
 }
 
 function Profile() {

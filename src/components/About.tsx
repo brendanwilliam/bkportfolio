@@ -11,7 +11,7 @@ interface ContactLink {
 const contact: ContactLink[] = [
   { title: "brendanwillkeane@gmail.com", icon: "bxl-gmail", href: "mailto:brendanwillkeane@gmail.com" },
   { title: "in/brendanwillkeane", icon: "bxl-linkedin", href: "https://www.linkedin.com/in/brendanwillkeane/" },
-  { title: "Download resume", icon: "bx-download", href: "" }
+  { title: "Download resume", icon: "bx-download", href: "/resume-brendankeane.pdf" }
 ]
 
 function Biography() {
