@@ -20,6 +20,7 @@ const projects: Project[] = [
     title: "Figma to Frontend — Design system showcase",
     description: "Figma to Frontend is a design system showcase that demonstrates the process of converting a Figma design system into a fully functional frontend application. This project was built with React using TypeScript and TailwindCSS, and deployed with Next.js and Vercel.",
     links: [
+      { title: "Figma designs", icon: "bxl-figma", href: "https://www.figma.com/community/file/1347365788085846321/figma-to-frontend" },
       { title: "Project repository", icon: "bxl-github", href: "https://github.com/brendanwilliam/bkportfolio" }
     ]
   },
