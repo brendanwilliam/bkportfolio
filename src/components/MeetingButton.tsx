@@ -5,7 +5,7 @@ export function MeetingButton() {
     <div className="flex flex-col items-center">
       <Button
         href="https://calendly.com/brendan-jkp8/30min"
-        style="secondary"
+        style="primary"
       >
         Schedule a Meeting
       </Button>

@@ -43,9 +43,11 @@ function Profile() {
 
 function ValueProp() {
   return (
-    <div className="flex flex-col gap-2">
-      <p className="text-lg text-neutral-600">I design and build digital products that are intuitive, accessible, and delightful to use.</p>
-      <p className="text-lg text-neutral-600">Let&apos;s create something great together.</p>
+    <div className="flex flex-col gap-4 w-[45ch]">
+      <p className="text-7xl font-bold text-neutral-800">
+        My work is designed to engineer.</p>
+      <p className="text-neutral-600">
+        With experience in UI/UX design and software engineering, I connect design and development teams to streamline production.</p>
     </div>
   )
 }
@@ -60,28 +62,11 @@ function SocialLinks() {
   )
 }
 
-function ActionButtons() {
-  return (
-    <div className="flex gap-2">
-      <MeetingButton />
-    </div>
-  )
-}
-
 function HeroProfile() {
   return (
-    <div className="flex flex-col justify-start md:justify-between md:py-16 h-full items-start gap-8">
+    <div className="container mx-auto flex flex-col justify-center items-start gap-8 py-20 h-[600px]">
       <ValueProp />
-      <ActionButtons />
-    </div>
-  )
-}
-
-function HeroMenu() {
-  return (
-    <div className="md:hidden w-full flex flex-col justify-end items-center gap-1">
-      <Button href="#projects" style="primary">Projects</Button>
-      <Button href="#about" style="secondary">About</Button>
+      <MeetingButton />
     </div>
   )
 }

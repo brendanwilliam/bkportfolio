@@ -10,10 +10,9 @@ export default function Home() {
     <main className="flex md:sticky md:top-0 min-h-screen flex-col w-screen bg-white overflow-auto md:max-h-screen">
       <Header />
       <Hero />
-      <Content className="lg:flex md:top-0 block lg:flex-row-reverse justify-start items-start md:p-6">
-        <div className="size-0 ml-auto"></div>
-        <Projects />
+      <Content className="container mx-auto flex">
         <About />
+        <Projects />
       </Content>
     </main>
   );

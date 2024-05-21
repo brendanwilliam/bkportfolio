@@ -57,21 +57,12 @@ function ResumeButton() {
   )
 }
 
-function ActionButtons() {
-  return(
-    <div className="flex gap-4 flex-row-reverse">
-      <SocialLinks />
-      <ResumeButton />
-    </div>
-  )
-}
-
 export function Header() {
   return (
     <div className="w-screen z-50">
       <div className="container mx-auto flex justify-between items-center h-16">
         <Title />
-        <ActionButtons />
+        <SocialLinks />
       </div>
     </div>
   )

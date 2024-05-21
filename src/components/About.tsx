@@ -11,15 +11,18 @@ interface ContactLink {
 const contact: ContactLink[] = [
   { title: "brendanwillkeane@gmail.com", icon: "bxl-gmail", href: "mailto:brendanwillkeane@gmail.com" },
   { title: "in/brendanwillkeane", icon: "bxl-linkedin", href: "https://www.linkedin.com/in/brendanwillkeane/" },
-  { title: "Download resume", icon: "bx-download", href: "/resume-brendankeane.pdf" }
+  { title: "Download resume", icon: "bx-file", href: "/resume-brendankeane.pdf" }
 ]
 
 function Biography() {
   return (
     <SubSection title="Biography">
       <div className="font-light text-neutral-600 text-sm space-y-1">
-        <p>Trained in both UI/UX design and software  engineering, Brendan’s technical edge lets him develop digital products  from idea to reality. At Rough Draft Media, his unique skills shine in  brand design, web development, video editing, and technical art.</p>
-        <p>Since  graduating the University of Washington with a B.S. in Human-Computer  Interaction, Brendan has produced custom websites for film &  television, professional portfolios, and online learning platforms.</p>
+        <p>Trained in both UI/UX design and software engineering, Brendan&apos;s technical edge lets him develop digital products while being mindful technical limitations.<br/>
+        After starting his career as a UI/UX designer, Brendan transitioned to software engineering to better understand the developer experience when implementing his designs. From this experience he saw first-hand the challenges developers face at design handoff.<br/>
+        At Rough Draft Media, his unique skills shine in brand design, web development, video editing, and technical art. He also explores the intersection of design and technology as a game developer and UI artist.<br/>
+        Combining his passion for teaching technology and his experience in the field, Brendan is the lead designer for Smash Technology, a Seattle-based startup that provides tech industry training for underrepresented communities.<br/>
+        </p>
       </div>
     </SubSection>
 
@@ -40,7 +43,7 @@ function Contact() {
 
 export function About() {
   return (
-    <Section id="about" title="About" className="md:max-w-sm">
+    <Section id="about" className="w-1/2">
       <Biography />
       <Contact />
     </Section>
