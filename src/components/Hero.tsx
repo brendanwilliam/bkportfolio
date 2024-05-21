@@ -2,7 +2,9 @@ import clsx from "clsx";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { SocialLink } from "@/components/SocialLink";
+import { MeetingButton } from "@/components/MeetingButton";
 
+// Hero data schema
 interface SocialLink {
   href: string,
   icon: string
@@ -12,16 +14,15 @@ interface HeroProfile {
   name: string,
   location: string,
   title: string,
-  openToWork: boolean,
   socialLinks: SocialLink[],
   resumeHref: string
 }
 
+// Hero data
 const heroProfile: HeroProfile = {
   name: "Brendan Keane",
   location: "Seattle, WA",
-  title: "Frontend Developer & UX Designer",
-  openToWork: true,
+  title: "Design & UX Engineer",
   socialLinks: [
     { href: "https://www.linkedin.com/in/brendanwillkeane/", icon: "bxl-linkedin"},
     { href: "mailto:brendanwillkeane@gmail.com", icon: "bxl-gmail"},
@@ -33,40 +34,45 @@ const heroProfile: HeroProfile = {
 
 function Profile() {
   return (
-    <div className="flex flex-col justify-start items-center gap-0">
-      <Image
-      src="/profile.jpg"
-      alt="Profile picture"
-      width={160}
-      height={160}
-      className="rounded-full size-40"
-      />
-      <h1 className="text-4xl font-bold text-neutral-800 mb-2">{heroProfile.name}</h1>
-      <h2 className="text-base font-normal text-neutral-500">{heroProfile.title}</h2>
-      <p className={clsx(heroProfile.openToWork ? "block text-xs italic font-light text-sky-800" : "hidden")}>*Open to full-time opportunities</p>
+    <div className="flex justify-between w-full sticky top-0">
+      <h1 className="text-xl font-bold text-neutral-800 mb-2">{heroProfile.name}<span className="text-lg font-normal text-neutral-500">{' | '}{heroProfile.title}</span></h1>
+      <SocialLinks />
+    </div>
+  )
+}
+
+function ValueProp() {
+  return (
+    <div className="flex flex-col gap-2">
+      <p className="text-lg text-neutral-600">I design and build digital products that are intuitive, accessible, and delightful to use.</p>
+      <p className="text-lg text-neutral-600">Let&apos;s create something great together.</p>
     </div>
   )
 }
 
 function SocialLinks() {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-0">
       {heroProfile.socialLinks.map((link, index) => (
         <SocialLink key={index} href={link.href} icon={link.icon} />
       ))}
     </div>
   )
+}
 
+function ActionButtons() {
+  return (
+    <div className="flex gap-2">
+      <MeetingButton />
+    </div>
+  )
 }
 
 function HeroProfile() {
   return (
-    <div className="flex flex-col justify-start md:justify-between md:py-16 h-full items-center gap-8">
-      <Profile />
-      <div className="flex flex-col gap-8">
-        <SocialLinks />
-        <Button href={heroProfile.resumeHref} style="tertiary" icon="bx-download">Download resume</Button>
-      </div>
+    <div className="flex flex-col justify-start md:justify-between md:py-16 h-full items-start gap-8">
+      <ValueProp />
+      <ActionButtons />
     </div>
   )
 }
@@ -82,9 +88,9 @@ function HeroMenu() {
 
 export function Hero() {
   return (
-    <div className="w-full md:max-w-80 md:max-h-screen h-screen md:sticky md:top-0 flex flex-col justify-between md:justify-center md:py-8 md:bg-neutral-50 items-stretch gap-8 px-4 pb-8 pt-32">
+    <div className="w-full px-10 bg-neutral-200">
       <HeroProfile />
-      <HeroMenu />
+      {/* <HeroMenu /> */}
     </div>
   )
 }
