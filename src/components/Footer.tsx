@@ -4,10 +4,10 @@ export function Footer() {
 
   return (
     <footer>
-      <div className="w-full bg-neutral-100 py-1 px-4 relative z-50">
+      <div className="w-full bg-zinc-900 py-1 px-4 relative z-50 border-t border-zinc-400 py-2">
         <div className="flex justify-between">
           <div>
-            <p className="text-neutral-700 text-xs font-light">&copy; Brendan Keane {new Date().getFullYear()}. All rights reserved.</p>
+            <p className="text-zinc-400 text-xs font-light">&copy; Brendan Keane {new Date().getFullYear()}. All rights reserved.</p>
           </div>
           <div>
             <Button style="tertiary" icon="bxl-github" href="https://github.com/brendanwilliam/bkportfolio">Source code</Button>

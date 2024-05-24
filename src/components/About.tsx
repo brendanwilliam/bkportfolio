@@ -25,7 +25,7 @@ function Biography() {
         Bothered by the disconnect between design details and developer implementation, Brendan transitioned into software engineering to better understand the developer experience. This practice introduced him to React, Next.js, and Tailwind CSS establishing analogues between Figma features and front-end developer best practices. He is currently developing a course titled <strong>Figma to Frontend</strong> to help prospective designers use technical constraints to simplify handoffs in cross-functional teams.<br/><br/>
         At Rough Draft Media, his unique skills shine in brand design, web development, video editing, and technical art where he produces and co-hosts podcasts and develops custom websites. In between projects, Brendan also explores the intersection of design and technology as a game developer and UI artist.<br/><br/>
         Combining his passion for teaching technology and his experience in the field, Brendan is the lead designer for Smash Technology, a Seattle-based startup that provides tech industry training for underrepresented communities. He is responsible for the course sales experience, student onboarding, and chatbot integration.<br/><br/>
-        To learn more about Brendan, visit his <a href={contact[1].href} className="text-emerald-400 hover:underline">LinkedIn profile</a> or <a href={contact[2].href} className="text-emerald-400 hover:underline">download his resume</a>.
+        To learn more about Brendan, visit his <a href={contact[1].href} className="text-emerald-600 hover:underline hover:text-emerald-300">LinkedIn profile</a> or <a href={contact[2].href} className="text-emerald-600 hover:text-emerald-300 hover:underline">download his resume</a>.
         </p>
       </div>
     </SubSection>
