@@ -54,7 +54,7 @@ export function About({
 }) {
   return (
     <Section id={id} className={clsx("lg:max-w-sm lg:ml-auto", className)}>
-      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 text-4xl font-bold text-zinc-100">About</h2>
+      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-4xl text-2xl font-bold text-zinc-100">About</h2>
       <Contact />
       <Biography />
     </Section>
