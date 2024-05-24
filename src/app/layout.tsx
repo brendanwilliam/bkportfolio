@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/favicon.ico?v=3" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       </head>
       <body className={interTight.className}>
