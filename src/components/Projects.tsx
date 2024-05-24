@@ -108,7 +108,7 @@ function ProjectCard({
 export function Projects() {
   return (
     <Section id="projects" className="">
-      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 text-4xl font-bold text-zinc-100">Projects</h2>
+      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-4xl text-2xl font-bold text-zinc-100">Projects</h2>
       <div className="flex flex-col gap-5">
         {projects.map((project, index) => (
           <ProjectCard key={index} thumbnail={project.thumbnail} date={project.date} title={project.title} description={project.description} links={project.links} />
