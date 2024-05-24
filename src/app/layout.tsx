@@ -23,7 +23,7 @@ export default function RootLayout({
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
       </head>
       <body className={interTight.className}>
-        <div className="flex w-full bg-white">
+        <div className="flex w-full bg-zinc-950">
           {children}
         </div>
         <Footer />

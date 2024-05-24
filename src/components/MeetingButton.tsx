@@ -9,6 +9,7 @@ export function MeetingButton() {
       >
         Schedule a Meeting
       </Button>
+      <p className="text-xs text-zinc-500 mt-2">Powerered by Calendly</p>
     </div>
   );
 }

@@ -9,8 +9,10 @@ export function Content({
 
 }) {
   return (
-      <div className={clsx("w-full spacing-y-8", className)}>
-        {children}
+      <div className={clsx("w-full border-t border-zinc-800")}>
+        <div className={clsx("container mx-auto", className)}>
+          {children}
+        </div>
       </div>
   )
 }
