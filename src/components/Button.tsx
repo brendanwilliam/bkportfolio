@@ -19,9 +19,9 @@ export function Button({
     <Link href={href} className={
         clsx("flex flex-row justify-center items-center text-sm",
         style === "primary" || style === "secondary" ? "px-9 py-3 rounded-lg font-medium w-full" : "p-0 font-normal",
-        style === "primary" && "text-sky-50 bg-sky-600 hover:bg-sky-400",
-        style === "secondary" && "text-sky-600 bg-transparent hover:bg-sky-100 border border-sky-600",
-        style === "tertiary" && "text-sky-600 hover:text-sky-400")} >
+        style === "primary" && "text-emerald-50 bg-emerald-600 hover:bg-emerald-400",
+        style === "secondary" && "text-emerald-600 bg-transparent hover:bg-emerald-100 border border-emerald-600",
+        style === "tertiary" && "text-emerald-600 hover:text-emerald-300 hover:underline")} >
       <span className={clsx()}>
         <i className={clsx((icon === '') ? 'hidden' : 'inline bx bx-xs translate-y-0.5 mr-1', icon)}/>{children}
       </span>
