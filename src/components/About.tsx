@@ -1,7 +1,6 @@
 import { SubSection } from "@/components/SubSection";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/Button";
-import { SocialLinks } from "@/components/SocialLinks";
 import clsx from 'clsx';
 
 interface ContactLink {
@@ -13,7 +12,7 @@ interface ContactLink {
 const contact: ContactLink[] = [
   { title: "brendanwillkeane@gmail.com", icon: "bxl-gmail", href: "mailto:brendanwillkeane@gmail.com" },
   { title: "in/brendanwillkeane", icon: "bxl-linkedin", href: "https://www.linkedin.com/in/brendanwillkeane/" },
-  { title: "Resume", icon: "bx-file", href: "/resume_brendankeane.pdf" }
+  { title: "Resume", icon: "bx-file", href: "https://www.bkportfolio.me/resume_brendankeane.pdf" }
 ]
 
 function Biography() {
