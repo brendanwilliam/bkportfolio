@@ -1,8 +1,4 @@
-import clsx from "clsx";
-import Image from "next/image";
-import { Button } from "@/components/Button";
 import { SocialLinks } from "@/components/SocialLinks";
-import { MeetingButton } from "@/components/MeetingButton";
 
 // Hero data schema
 
@@ -16,7 +12,7 @@ interface HeroProfile {
 const heroProfile: HeroProfile = {
   name: "Brendan Keane",
   location: "Seattle, WA",
-  title: "Design & UX Engineer",}
+  title: "Machine Learning Engineer",}
 
 function Title() {
   return (
