@@ -4,9 +4,9 @@ import { MeetingButton } from "@/components/MeetingButton";
 
 function ValueProp() {
   return (
-    <div className="space-y-5 text-center flex flex-col items-center">
+    <div className="space-y-5 text-center flex flex-col items-center my-20">
       <p className="text-3xl md:text-6xl font-bold text-zinc-100 w-[20ch]">
-        I'm AI's favorite human</p>
+        I&apos;m AI&apos;s favorite human</p>
       <p className="text-6xl text-zinc-500 pb-10">— 🤖❤️😊 —</p>
       <p className="text-base md:text-2xl text-zinc-300 w-[40ch] drop-shadow-lg font-light">
         Brendan Keane is a Machine Learning Engineer with seven years experience building tech solutions for everyday people.</p>
@@ -25,7 +25,7 @@ function HeroProfile() {
 
 export function Hero() {
   return (
-    <div className="w-full px-10 bg-[url('/hero-background.png')] bg-fixed">
+    <div className="w-full px-10 bg-[url('/hero-background.png')] bg-fixed bg-cover">
       <HeroProfile />
     </div>
   )

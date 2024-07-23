@@ -84,12 +84,12 @@ function ProjectCard({
 }) {
 
   return (
-    <div className="flex md:flex-row flex-col-reverse rounded-xl bg-zinc-900 w-full">
-      <div className="flex flex-col justify-center items-stretch gap-4 p-6 ">
+    <div className="flex xl:flex-row flex-col-reverse rounded-xl bg-zinc-900 w-full">
+      <div className="flex flex-col justify-center items-stretch gap-4 px-6 py-10">
         <div className="space-y-1">
-          <FormattedDate date={date} className="text-xs font-medium text-zinc-400" />
-          <h3 className="text-lg font-bold text-zinc-200">{title}</h3>
-          <p className="text-sm text-zinc-400">{description}</p>
+          <FormattedDate date={date} className="text-sm font-medium text-zinc-400" />
+          <h3 className="text-2xl font-bold text-zinc-200">{title}</h3>
+          <p className="text-lg text-zinc-400">{description}</p>
         </div>
         <div className="flex flex-col justify-start items-start gap-1 mt-auto">
           {links.map((link, index) => (
@@ -98,8 +98,8 @@ function ProjectCard({
         </div>
       </div>
       <div className="">
-        <Image src={thumbnail} alt={title} width="300" height="300" className="rounded-xl hidden md:flex h-full md:min-w-80"/>
-        <Image src={thumbnail} alt={title} width="600" height="300" className="md:hidden flex rounded-t-xl -mb-2 w-full object-cover"/>
+        <Image src={thumbnail} alt={title} width="300" height="300" className="rounded-xl hidden xl:flex h-full xl:min-w-80"/>
+        <Image src={thumbnail} alt={title} width="600" height="300" className="xl:hidden flex rounded-t-xl -mb-2 w-full object-cover"/>
       </div>
     </div>
   )
@@ -108,7 +108,7 @@ function ProjectCard({
 export function Projects() {
   return (
     <Section id="projects" className="">
-      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-4xl text-2xl font-bold text-zinc-100">Projects</h2>
+      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-5xl text-5xl font-bold text-zinc-100">Projects</h2>
       <div className="flex flex-col gap-5">
         {projects.map((project, index) => (
           <ProjectCard key={index} thumbnail={project.thumbnail} date={project.date} title={project.title} description={project.description} links={project.links} />
