@@ -85,9 +85,9 @@ function ProjectCard({
 
   return (
     <div className="flex xl:flex-row flex-col-reverse rounded-xl bg-zinc-900 w-full">
-      <div className="flex flex-col justify-center items-stretch gap-4 px-6 py-10">
+      <div className="flex flex-col justify-center items-stretch gap-4 px-6 xl:py-6 py-10">
+        <FormattedDate date={date} className="text-sm font-medium text-zinc-400" />
         <div className="space-y-1">
-          <FormattedDate date={date} className="text-sm font-medium text-zinc-400" />
           <h3 className="text-2xl font-bold text-zinc-200">{title}</h3>
           <p className="text-lg text-zinc-400">{description}</p>
         </div>
