@@ -20,7 +20,7 @@ function ValueProp() {
 
 function HeroProfile() {
   return (
-    <div className="container mx-auto flex flex-col justify-center items-start gap-10 py-20">
+    <div className="container mx-auto flex flex-col justify-center items-start gap-10 py-20 mb-14">
       <ValueProp />
       <MeetingButton />
     </div>

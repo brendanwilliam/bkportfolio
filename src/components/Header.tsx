@@ -13,11 +13,11 @@ interface HeroProfile {
 const heroProfile: HeroProfile = {
   name: "Brendan Keane",
   location: "Seattle, WA",
-  title: "Machine Learning Engineer",}
+  title: "Data & Machine Learning Engineer",}
 
 function Title() {
   return (
-    <h1 className="md:text-xl text-base font-bold text-zinc-400 mb-2 md:flex hidden">{heroProfile.name}<span className="md:text-lg text-sm font-normal text-zinc-500">{' | '}{heroProfile.title}</span></h1>
+    <h1 className="md:text-xl text-base font-bold text-zinc-400 mb-2 md:flex hidden">{heroProfile.name}<span className="md:text-lg text-sm font-normal text-zinc-500 ml-1">{' | '}{heroProfile.title}</span></h1>
   )
 }
 
