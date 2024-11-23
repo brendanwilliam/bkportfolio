@@ -1,39 +1,26 @@
 import Link from "next/link";
 import clsx from "clsx";
+import { Button } from "@/components/Button";
 
 interface SocialLink {
   href: string,
-  icon: string
+  icon: string,
+  text: string,
 }
 
 const socialLinks: SocialLink[] = [
-  { href: "https://www.linkedin.com/in/brendanwillkeane/", icon: "bxl-linkedin"},
-  { href: "mailto:brendanwillkeane@gmail.com", icon: "bxl-gmail"},
-  { href: "https://github.com/brendanwilliam", icon: "bxl-github"},
+  { href: "https://www.linkedin.com/in/brendanwillkeane/", icon: "bxl-linkedin", text: "LinkedIn"},
+  { href: "https://github.com/brendanwilliam", icon: "bxl-github", text: "Github"},
+  { href: "/resume_brendankeane.pdf", icon: "bx-file", text: "Resume"},
 ]
 
 
-function SocialLink({
-  href,
-  icon = "",
-}:{
-  href: string,
-  icon: string,
-}) {
-
-  return (
-    <Link href={href} className="group flex justify-center items-center size-8 text-emerald-600 bg-transparent hover:bg-emerald-400 hover:text-sky-50 rounded-full transition-all ease-in-out duration-75">
-        <i className={clsx("bx bx-xs group-hover:scale-125 transition-all ease-in-out duration-300", icon)} />
-    </Link>
-
-  )
-}
 
 export function SocialLinks({className = ""} : {className?: string}) {
   return (
-    <div className={clsx("flex gap-0", className)}>
+    <div className={clsx("flex flex-row gap-4", className)}>
       {socialLinks.map((link, index) => (
-        <SocialLink key={index} href={link.href} icon={link.icon} />
+        <Button key={index} href={link.href} style="tertiary" icon={link.icon}>{link.text}</Button>
       ))}
     </div>
   )

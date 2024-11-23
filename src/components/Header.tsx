@@ -1,4 +1,5 @@
 import { SocialLinks } from "@/components/SocialLinks";
+import Image from 'next/image';
 
 // Hero data schema
 
@@ -16,7 +17,7 @@ const heroProfile: HeroProfile = {
 
 function Title() {
   return (
-    <h1 className="md:text-xl text-base font-bold text-zinc-400 mb-2">{heroProfile.name}<span className="md:text-lg text-sm font-normal text-zinc-500">{' | '}{heroProfile.title}</span></h1>
+    <h1 className="md:text-xl text-base font-bold text-zinc-400 mb-2 md:flex hidden">{heroProfile.name}<span className="md:text-lg text-sm font-normal text-zinc-500">{' | '}{heroProfile.title}</span></h1>
   )
 }
 

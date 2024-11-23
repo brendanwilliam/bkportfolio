@@ -17,7 +17,7 @@ const contact: ContactLink[] = [
 
 function Biography() {
   return (
-    <SubSection title="Biography">
+    <SubSection title="">
       <div className="text-zinc-400 text-lg space-y-1 max-w-[50ch]">
         <p>
         A Machine Learning Engineer and a Human-Computer Interaction graduate from the University of Washington that combines data and ML engineering skill with an eye for the social impact of emerging technologies.<br/><br/>
@@ -27,25 +27,11 @@ function Biography() {
         <br/><br/>
         Upon graduating from the University of Washington iSchool with a B.S. in Human-Computer Interaction, he founded Rough Draft Media to continue work as a Data Engineer while producing the video podcast “Can I Tell You Something?” In this role he regularly builds datasets and develops machine learning models to understand the world of digital media in the era of ubiquitous AI.
         <br/><br/>
-        Currently, he is looking for full-time opportunities as a Machine Learning Engineer.
-        <br/><br/>
-        To learn more about Brendan, visit his <a href={contact[1].href} className="text-emerald-600 hover:underline hover:text-emerald-300">LinkedIn profile</a> or <a href={contact[2].href} className="text-emerald-600 hover:text-emerald-300 hover:underline">download his resume</a>.
+        <strong>Currently, he is looking for full-time opportunities as a Machine Learning Engineer.</strong>
         </p>
       </div>
     </SubSection>
 
-  )
-}
-
-function Contact() {
-  return (
-    <SubSection title="Contact">
-      <div className="flex flex-col justify-start items-start gap-1">
-        {contact.map((link, index) => (
-          <Button key={index} href={link.href} style="tertiary" icon={link.icon}>{link.title}</Button>
-        ))}
-      </div>
-    </SubSection>
   )
 }
 
@@ -59,7 +45,6 @@ export function About({
   return (
     <Section id={id} className={clsx("lg:max-w-sm lg:ml-auto", className)}>
       <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-5xl text-5xl font-bold text-zinc-100">About</h2>
-      <Contact />
       <Biography />
     </Section>
   )

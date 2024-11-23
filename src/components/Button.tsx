@@ -23,7 +23,7 @@ export function Button({
         style === "secondary" && "text-emerald-600 bg-transparent hover:bg-emerald-100 border border-emerald-600",
         style === "tertiary" && "text-emerald-600 hover:text-emerald-300 hover:underline")} >
       <span className={clsx()}>
-        <i className={clsx((icon === '') ? 'hidden' : 'inline bx bx-xs translate-y-0.5 mr-1', icon)}/>{children}
+        <i className={clsx((icon === '') ? 'hidden' : 'inline bx bx-xs mr-1', icon)}/>{children}
       </span>
     </Link>
 
