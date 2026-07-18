@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-screen flex-col overflow-auto">
+    <main className="flex min-h-screen w-screen flex-col overflow-x-hidden">
       <Header />
       <Hero />
       <Content className="flex flex-col px-5">
