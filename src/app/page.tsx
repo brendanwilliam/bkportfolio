@@ -7,12 +7,12 @@ import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className="flex md:sticky md:top-0 min-h-screen flex-col w-screen overflow-auto md:max-h-screen">
+    <main className="flex min-h-screen w-full flex-col overflow-auto">
       <Header />
       <Hero />
-      <Content className="flex lg:flex-row flex-col lg:gap-20 px-5">
+      <Content className="flex flex-col px-5">
         <Projects />
-        <About id="about" />
+        <About id="about" className="" />
       </Content>
     </main>
   );

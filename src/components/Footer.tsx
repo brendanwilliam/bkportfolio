@@ -4,8 +4,8 @@ export function Footer() {
 
   return (
     <footer>
-      <div className="w-full bg-zinc-900 py-2 px-4 relative z-50 border-t border-zinc-400">
-        <div className="flex justify-between items-end">
+      <div className="relative z-50 w-full border-t border-zinc-400 bg-zinc-900 px-4 py-2">
+        <div className="container mx-auto flex items-end justify-between">
           <div>
             <p className="text-zinc-400 text-xs font-light">&copy; Brendan Keane {new Date().getFullYear()}. All rights reserved.</p>
           </div>

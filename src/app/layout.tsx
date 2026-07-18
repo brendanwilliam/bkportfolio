@@ -8,7 +8,7 @@ const interTight = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio — Brendan Keane",
-  description: "Brendan Keane's design & UX engineering portfolio.",
+  description: "Brendan Keane is a Senior AI Software Engineer building reliable, human-centered AI products.",
 };
 
 export default function RootLayout({

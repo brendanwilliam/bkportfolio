@@ -1,5 +1,4 @@
 import { SocialLinks } from "@/components/SocialLinks";
-import Image from 'next/image';
 
 // Hero data schema
 
@@ -13,7 +12,7 @@ interface HeroProfile {
 const heroProfile: HeroProfile = {
   name: "Brendan Keane",
   location: "Seattle, WA",
-  title: "Data & Machine Learning Engineer",}
+  title: "Senior AI Software Engineer",}
 
 function Title() {
   return (
@@ -23,7 +22,7 @@ function Title() {
 
 export function Header() {
   return (
-    <div className="w-screen z-50 bg-zinc-950 border-b border-zinc-800 sticky top-0 px-5">
+    <div className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950 px-5">
       <div className="container mx-auto flex justify-between items-center h-16 pt-1">
         <Title />
         <SocialLinks />
@@ -31,6 +30,4 @@ export function Header() {
     </div>
   )
 }
-
-
 
