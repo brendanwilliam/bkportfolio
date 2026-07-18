@@ -72,8 +72,8 @@ function ProjectCard({
 }) {
 
   return (
-    <div className="flex w-full flex-col-reverse overflow-hidden rounded-xl bg-zinc-900 xl:flex-row xl:justify-between">
-      <div className="flex flex-col items-stretch justify-center gap-4 px-6 py-10 xl:flex-1 xl:py-6">
+    <div className="flex w-full flex-col-reverse overflow-hidden rounded-xl bg-zinc-900 sm:flex-row sm:justify-between">
+      <div className="flex flex-col items-stretch justify-center gap-4 px-6 py-10 sm:flex-1 sm:py-6">
         <FormattedDate date={date} className="text-sm font-medium text-zinc-400" />
         <div className="space-y-1">
           <h3 className="text-2xl font-bold text-zinc-200">{title}</h3>
@@ -93,9 +93,9 @@ function ProjectCard({
           ))}
         </div>
       </div>
-      <div className="xl:ml-auto xl:shrink-0">
-        <Image src={thumbnail} alt={title} width="300" height="300" className="hidden h-full xl:flex xl:min-w-80 xl:object-cover"/>
-        <Image src={thumbnail} alt={title} width="600" height="300" className="xl:hidden flex rounded-t-xl -mb-2 w-full object-cover"/>
+      <div className="sm:ml-auto sm:shrink-0">
+        <Image src={thumbnail} alt={title} width="300" height="300" className="hidden h-full sm:flex sm:min-w-72 sm:object-cover"/>
+        <Image src={thumbnail} alt={title} width="600" height="300" className="-mb-2 flex w-full rounded-t-xl object-cover sm:hidden"/>
       </div>
     </div>
   )
@@ -103,9 +103,11 @@ function ProjectCard({
 
 export function Projects() {
   return (
-    <Section id="projects" className="">
-      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-5xl text-5xl font-bold text-zinc-100">Projects</h2>
-      <div className="flex flex-col gap-5">
+    <Section id="projects" className="lg:grid lg:grid-cols-3 lg:gap-8">
+      <div className="lg:sticky lg:top-16 lg:self-start">
+        <h2 className="py-5 text-5xl font-bold text-zinc-100 md:text-5xl">Projects</h2>
+      </div>
+      <div className="flex flex-col gap-5 lg:col-span-2">
         {projects.map((project, index) => (
           <ProjectCard key={index} thumbnail={project.thumbnail} date={project.date} title={project.title} tags={project.tags} description={project.description} status={project.status} links={project.links} />
         ))}

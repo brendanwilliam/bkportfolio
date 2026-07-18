@@ -1,5 +1,6 @@
 import { SubSection } from "@/components/SubSection";
 import { Section } from "@/components/Section";
+import clsx from "clsx";
 
 function Biography() {
   return (
@@ -27,9 +28,13 @@ export function About({
   className?: string
 }) {
   return (
-    <Section id={id} className={className}>
-      <h2 className="sticky top-14 z-30 bg-zinc-950 py-5 md:text-5xl text-5xl font-bold text-zinc-100">About</h2>
-      <Biography />
+    <Section id={id} className={clsx("lg:grid lg:grid-cols-3 lg:gap-8", className)}>
+      <div className="lg:sticky lg:top-16 lg:self-start">
+        <h2 className="py-5 text-5xl font-bold text-zinc-100 md:text-5xl">About</h2>
+      </div>
+      <div className="lg:col-span-2">
+        <Biography />
+      </div>
     </Section>
   )
 }

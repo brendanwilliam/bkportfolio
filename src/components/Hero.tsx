@@ -21,7 +21,9 @@ function HeroProfile() {
   return (
     <div className="container mx-auto flex flex-col items-center justify-center gap-10 px-5 py-20 mb-14 text-center">
       <ValueProp />
-      <Button href="#projects" style="secondary" icon="bx-down-arrow-alt">View Projects</Button>
+      <div className="w-full max-w-xs">
+        <Button href="#projects" style="secondary" icon="bx-down-arrow-alt">View Projects</Button>
+      </div>
     </div>
   )
 }

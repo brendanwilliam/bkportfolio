@@ -23,7 +23,7 @@ const contributions = [
 
 export default function MedivoxCaseStudy() {
   return (
-    <main className="min-h-screen bg-zinc-950 px-5 py-12 text-zinc-100 md:py-20">
+    <main className="min-h-screen w-screen bg-zinc-950 px-5 py-12 text-zinc-100 md:py-20">
       <article className="container mx-auto max-w-3xl">
         <Link href="/#projects" className="inline-flex items-center text-emerald-500 hover:text-emerald-300 hover:underline">
           <i className="bx bx-left-arrow-alt mr-1" />Back to projects
