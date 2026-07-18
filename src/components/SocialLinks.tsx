@@ -11,7 +11,6 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   { href: "https://www.linkedin.com/in/brendanwillkeane/", icon: "bxl-linkedin", text: "LinkedIn"},
   { href: "https://github.com/brendanwilliam", icon: "bxl-github", text: "Github"},
-  { href: "/resume_brendankeane.pdf", icon: "bx-file", text: "Resume"},
 ]
 
 
